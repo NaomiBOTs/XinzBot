@@ -308,7 +308,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                         const getReason = afk.getAfkReason(getId, _afk)
                         const getTime = Date.now() - afk.getAfkTime(getId, _afk)
                         const heheh = ms(getTime)
-                        await mentions(`@${ment.split('@')[0]} sedang afk\n\n*Alasan :* ${getReason}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu`, [ment], true)
+                        await mentions(`@${ment.split('@')[0]} seedang afk\n\n*Alasan :* ${getReason}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu`, [ment], true)
                         sendMess(ment, `Ada yang mencari anda saat anda offline\n\nNama : ${pushname}\nNomor : wa.me/${sender.split("@")[0]}\nIn Group : ${groupName}\nPesan : ${chats}`)
                     }
                 }
