@@ -231,7 +231,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
             for (let kasar of badword){
                 if (chats.toLowerCase().includes(kasar)){
                     if (isCountKasar(sender, senbadword)){
-                        if (!isBotGroupAdmins) return reply(`Kamu beruntung karena bot bukan admin`)
+                        if (!isBotGroupAdmins) return reply(`Kamu beruntung karena bot3 bukan admin`)
                         reply(`*「 ANTI BADWORD 」*\n\nSepertinya kamu sudah berkata kasar lebih dari 5x, maaf kamu akan di kick`)
                         xinz.groupRemove(from, [sender])
                         delCountKasar(sender, senbadword)
